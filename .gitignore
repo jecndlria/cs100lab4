@@ -4,6 +4,6 @@ Makefile
 CMakeCache.txt
 googletest
 test
-rectange
+rectangle
 *cmake
 *a
