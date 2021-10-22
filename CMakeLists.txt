@@ -10,6 +10,7 @@ ADD_EXECUTABLE(rectangle
 )
 
 ADD_EXECUTABLE(test
+	src/rectangle.cpp
 	tests/test.cpp
 )
 
