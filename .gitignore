@@ -1,7 +1,9 @@
 CMakeFiles
 googletest
-*cmake
 Makefile
-*a
 CMakeCache.txt
 googletest
+test
+rectange
+*cmake
+*a
