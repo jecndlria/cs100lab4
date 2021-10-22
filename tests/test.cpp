@@ -1,33 +1,33 @@
 #include "../header/rectangle.hpp"
 #include "gtest/gtest.h"
 
-TEST(ConstructorTest, HelloWorld) {
+TEST(ConstructorTest, 1) {
     EXPECT_FALSE(false);
 }
-TEST(ConstructorTest, HelloWorld) {
+TEST(ConstructorTest, 2) {
     EXPECT_FALSE(false);
 }
-TEST(ConstructorTest, HelloWorld) {
-    EXPECT_FALSE(false);
-}
-
-TEST(AreaTest, HelloWorld) {
-    EXPECT_FALSE(false);
-}
-TEST(AreaTest, HelloWorld) {
-    EXPECT_FALSE(false);
-}
-TEST(AreaTest, HelloWorld) {
+TEST(ConstructorTest, 3) {
     EXPECT_FALSE(false);
 }
 
-TEST(PerimeterTest, HelloWorld) {
+TEST(AreaTest, 4) {
     EXPECT_FALSE(false);
 }
-TEST(PerimeterTest, HelloWorld) {
+TEST(AreaTest, 5) {
     EXPECT_FALSE(false);
 }
-TEST(PerimeterTest, HelloWorld) {
+TEST(AreaTest, 6) {
+    EXPECT_FALSE(false);
+}
+
+TEST(PerimeterTest, 7) {
+    EXPECT_FALSE(false);
+}
+TEST(PerimeterTest, 8) {
+    EXPECT_FALSE(false);
+}
+TEST(PerimeterTest, 9) {
     EXPECT_FALSE(false);
 }
 
