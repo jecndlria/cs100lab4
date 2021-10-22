@@ -11,24 +11,42 @@ TEST(ConstructorTest, 3) {
     EXPECT_FALSE(false);
 }
 
-TEST(AreaTest, 4) {
-    EXPECT_FALSE(false);
+TEST(AreaTest, AreaEdgeCase) {
+    Rectangle rect;
+    rect.set_height(0);
+    rect.set_width(0);
+    ASSERT_EQ(rect.area(), 0);
 }
-TEST(AreaTest, 5) {
-    EXPECT_FALSE(false);
+TEST(AreaTest, AreaSingleton) {
+    Rectangle rect;
+    rect.set_height(1);
+    rect.set_width(1);
+    ASSERT_EQ(rect.area(), 1);
 }
-TEST(AreaTest, 6) {
-    EXPECT_FALSE(false);
+TEST(AreaTest, BigArea) {
+    Rectangle rect(27425, 18271);
+    rect.set_height(27425);
+    rect.set_width(18271);
+    ASSERT_EQ(rect.area(), 501082175);
 }
 
-TEST(PerimeterTest, 7) {
-    EXPECT_FALSE(false);
+TEST(PerimeterTest, PerimeterEdgeCase) {
+    Rectangle rect;
+    rect.set_height(0);
+    rect.set_width(0);
+    ASSERT_EQ(rect.perimeter(), 0);
 }
-TEST(PerimeterTest, 8) {
-    EXPECT_FALSE(false);
+TEST(PerimeterTest, PerimeterSingleton) {
+    Rectangle rect;
+    rect.set_height(1);
+    rect.set_width(1);
+    ASSERT_EQ(rect.perimeter(), 4);
 }
-TEST(PerimeterTest, 9) {
-    EXPECT_FALSE(false);
+TEST(PerimeterTest, BigPerimeter) {
+    Rectangle rect;
+    rect.set_height(6025);
+    rect.set_width(4076);
+    ASSERT_EQ(rect.perimeter(), 20202);
 }
 
 int main(int argc, char **argv) {
