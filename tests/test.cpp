@@ -1,14 +1,41 @@
 #include "../header/rectangle.hpp"
 #include "gtest/gtest.h"
 
-TEST(ConstructorTest, 1) {
-    EXPECT_FALSE(false);
+TEST(ConstructorTest, WidthZeroUsingConstructorTest) {
+  Rectangle *test_rect = new Rectangle(0,0);
+  int expected_width =  0;
+  ASSERT_EQ(expected_width, test_rect->get_width());
 }
-TEST(ConstructorTest, 2) {
-    EXPECT_FALSE(false);
+
+TEST(ConstructorTest, HeightZeroUsingConstructorTest) {
+  Rectangle *test_rect = new Rectangle(0,0);
+  int expected_height =  0;
+  ASSERT_EQ(expected_height, test_rect->get_height());
 }
-TEST(ConstructorTest, 3) {
-    EXPECT_FALSE(false);
+
+TEST(ConstructorTest, WidthOneUsingConstructorTest) {
+  Rectangle *test_rect = new Rectangle(1,1);
+  int expected_width =  1;
+  ASSERT_EQ(expected_width, test_rect->get_width());
+}
+
+TEST(ConstructorTest, HeightOneUsingConstructorTest) {
+  Rectangle *test_rect = new Rectangle(1,1);
+  int expected_height =  1;
+  ASSERT_EQ(expected_height, test_rect->get_height());
+}
+
+
+TEST(ConstructorTest, LargeWidthUsingConstructorTest) {
+  Rectangle *test_rect = new Rectangle(99,99);
+  int expected_width =  99;
+  ASSERT_EQ(expected_width, test_rect->get_width());
+}
+
+TEST(ConstructorTest, LargeHeightUsingConstructorTest) {
+  Rectangle *test_rect = new Rectangle(99,99);
+  int expected_height =  99;
+  ASSERT_EQ(expected_height, test_rect->get_height());
 }
 
 TEST(AreaTest, AreaEdgeCase) {
